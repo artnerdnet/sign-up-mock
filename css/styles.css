@@ -124,6 +124,7 @@ html {
   background-image: url("../static/pexels-tom-balabaud-1579708.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   border-radius: 10px;
   color: #ffffff;
   display: flex;
@@ -187,4 +188,20 @@ h1 {
 
 a {
   color: #ffffff;
+}
+
+
+@media only screen and (max-width: 950px) {
+  .card {
+    flex-flow: column-reverse;
+  }
+  .card__header {
+    padding: 15px;
+  }
+  .card__image {
+    display: none;
+  }
+  .card__fields {
+    margin: 0;
+  }
 }
