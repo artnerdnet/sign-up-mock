@@ -1,0 +1,191 @@
+body,
+html {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f8f9;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  background-color: white;
+  height: 80vh;
+  width: 80vw;
+  border-radius: 10px;
+  display: flex;
+}
+
+.card__header {
+  flex: 1 1 0;
+  padding: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: flex-start;
+}
+
+.card__header--title {
+  text-align: center;
+}
+
+.card__social {
+  display: flex;
+  justify-content: center;
+  color: #63A088
+}
+
+.card__social i {
+  padding: 0.5rem;
+}
+
+.card__form {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.card__form--description {
+  color: #50676e;
+  font-size: 1rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.card__fields {
+  display: flex;
+  flex-flow: column;
+  margin: 2rem 0;
+}
+
+.card__terms {
+  color: #50676e;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.card__form--input {
+  border-radius: 5px;
+  margin: 5px;
+  border: 1.5px solid #D1E0E5;
+  padding: 10px;
+  background: #F7F8F9;
+  text-transform: capitalize;
+  height: 25px;
+}
+
+.card__form--input::placeholder {
+  color: #D1E0E5
+}
+
+.card__button {
+  border-radius: 5px;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  height: 45px;
+  min-width: 150px;
+  margin: 0.5rem;
+  flex-grow: 1;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.card__button:hover {
+  transform: scale(1.05)
+}
+
+.card__button--primary {
+  background: #D64550;
+  color: white;
+}
+
+.card__button--secondary {
+  color: #D64550;
+  background: white;
+  border: 2px solid #D64550;
+}
+
+
+.card__image {
+  align-items: flex-end;
+  background-image: url("../static/pexels-tom-balabaud-1579708.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  color: #ffffff;
+  display: flex;
+  flex: 1 1 0;
+  font-size: 0.5rem;
+  justify-content: center;
+}
+
+.card__image--credits {
+  color: #ffffff29;
+}
+
+
+/* Checkbox Styling */
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  color: #50676e;
+  font-size: 0.85rem;
+}
+
+input[type="checkbox"]+label:before {
+  border: 2px solid #D64550;
+  border-radius: 4px;
+  content: "\00a0";
+  display: inline-block;
+  font: 16px/1em sans-serif;
+  height: 16px;
+  margin: 0 .25em 0 0;
+  padding: .1rem;
+  vertical-align: top;
+  width: 16px;
+}
+
+input[type="checkbox"]:checked+label:before {
+  background: #D64550;
+  color: #ffffff;
+  content: "\2713";
+  text-align: center;
+}
+
+input[type="checkbox"]:checked+label:after {
+  font-weight: bold;
+}
+
+input[type="checkbox"]:focus+label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+}
+
+
+/* Font Styling */
+
+h1 {
+  font-size: 1.8rem;
+  color: #D64550
+}
+
+a {
+  color: #ffffff;
+}
