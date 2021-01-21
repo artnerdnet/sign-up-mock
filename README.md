@@ -1,6 +1,6 @@
 # Challenge #1
 
-Create a sign up page (HTML+CSS or React+SCSS) 
+Create a sign up page (HTML+CSS or React+SCSS) following this template: https://dribbble.com/shots/11879454-Sign-Up-Form
 
 ### Minimum requirements
 - Get as close as possible to the original mockup (image and icons can be different but sizes and spacing should be the same)
@@ -40,3 +40,5 @@ https://coolors.co/53dd6c-63a088-56638a-483a58-56203d
 
 Fonts:
 https://fonts.google.com/
+
+ 
