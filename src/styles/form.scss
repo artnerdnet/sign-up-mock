@@ -1,0 +1,38 @@
+/* Checkbox Styling */
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  color: $secondary-color-shadow;
+  font-size: 0.85rem;
+}
+
+input[type="checkbox"]+label:before {
+  border: 2px solid $primary-color;
+  border-radius: 4px;
+  content: "\00a0";
+  display: inline-block;
+  font: 16px/1em sans-serif;
+  height: 16px;
+  margin: 0 .25em 0 0;
+  padding: .1rem;
+  vertical-align: top;
+  width: 16px;
+}
+
+input[type="checkbox"]:checked+label:before {
+  background: $primary-color;
+  color: $white;
+  content: "\2713";
+  text-align: center;
+}
+
+input[type="checkbox"]:checked+label:after {
+  font-weight: bold;
+}
+
+input[type="checkbox"]:focus+label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+}
